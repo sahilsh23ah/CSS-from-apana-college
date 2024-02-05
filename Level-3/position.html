@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            display: inline-block;
+        }
+        p{
+            height: 200vh;
+        }
+
+        .box1{
+            position: relative;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+        }
+        
+        .box2{
+            position: absolute;
+            top: 120px;
+            left: 120px;
+        }
+        .box3{
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .box4{
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+
+        .box{
+            background-image: url(https://images.unsplash.com/photo-1687099176941-fc01c8b2d18e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+            /* background-size: contain;
+            background-repeat: no-repeat; */
+
+            background-size: cover;
+        }
+
+
+
+
+
+
+        /* practice set 5   */
+
+        .prac{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-image: url(https://images.unsplash.com/photo-1686982759480-b2accc3449b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIxfEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+            background-size: cover;
+            position: fixed;
+            right: 20px;
+            bottom: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>position playground</h1>
+    <p>Lorem</p>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <p>lorem</p>
+
+    <!-- z-index -->
+
+    <!-- by default z-index is zero always for everyting -->
+
+   <!-- z-index is working to control the overlaping if we remove z-index from box1 then the other boxs is overlap over box1 so by using z-index we can keep it on top over other boxs -->
+
+
+
+
+   <!-- about background image and thire different properties -->
+    <div class="box"></div>
+
+
+
+
+    <!-- practice set 5  -->
+
+    <h5>Lorem ipsum dolor sit amet.</h5>
+    <div class="prac"></div>
+    <h5>Lorem ipsum dolor sit amet.</h5>
+
+</body>
+</html>

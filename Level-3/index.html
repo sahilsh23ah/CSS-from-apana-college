@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>units in class</title>
+    <style>
+        .parent{
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            font-size: 1em;
+        }
+        .child{
+             width:100%;        /* it took the 50% of their parent  */
+            height: 50px;
+            background-color: rgb(17, 194, 141);
+            margin-left: 20%;       /* it took the 20% of their parent  */
+            font-size: 2em;      /* it took the 2 time of their parent size  */
+            /* font-size: 2rem;      it took the 32px  of their root mean window   */
+        }
+    </style>
+</head>
+<body>
+    <!-- understanding width using px unit and % unit  -->
+    <div class="parent">parent
+        <div class="child">
+            child
+        </div>
+    </div>
+</body>
+</html>

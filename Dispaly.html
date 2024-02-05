@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display properties</title>
+    <style>
+        div{
+            background-color: pink;
+            display: block;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 25px;
+            padding: 25px;
+            display: inline;
+        }
+
+        #box1{
+            background-color: blue;
+        }
+        #box2{
+            background-color: rgba(39, 228, 70, 0.651);
+        }
+       #box3{
+            background-color: rgb(221, 56, 199);
+        }
+        #box4{
+            background-color: rgb(248, 56, 104);
+        }
+        #box5{
+            background-color: rgb(83, 219, 243);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- inline = when we insert this value to display property then result will be it will take only required space and hide some property like margin and padding width and height sometime    -->
+
+    <!-- inline-block = here every properties will apply on doc and visible over their considering their own property inlink-block  -->
+
+
+    <div>this is a div </div>
+    <button>click me</button>
+
+    <div class="box" id="box1">box1</div>
+    <div class="box" id="box2">box2</div>
+    <div class="box" id="box3">box3</div>
+    <div class="box" id="box4">box4</div>
+    <div class="box" id="box5">box5</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Level - 2 </title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            width: 200px;
+            height: 50px;
+            background-color: antiquewhite;
+            border: solid bisque;
+            text-align: center;
+        }
+
+        button {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(247, 149, 21);
+            border: solid rgb(188, 223, 35);
+            text-align: center;
+        }
+
+        #div {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(43, 226, 43);
+            border-radius: 50%;
+            margin-top: 1em;
+        }
+
+        nav {
+            border: 5px solid rgb(255, 252, 252);
+            display: flex;
+            background-color: black;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: black;
+        }
+
+        .navlink {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navlink li {
+            list-style: none;
+        }
+
+        .navlink li a {
+
+            text-decoration: none;
+            color: aliceblue;
+            margin: 1em;
+            position: relative;
+            left: 4em;
+        }
+        
+
+        input {
+            position: relative;
+            left: 54em;
+            width: 140px;
+            height: 26px;
+            margin-top: 10px;
+
+        }
+
+        #search {
+            text-decoration: none;
+            color: #e5e5e5;
+            background-color: brown;
+            text-align: center;
+            margin-left: 46em;
+            width: 55px;
+            height: 25px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tenetur necessitatibus, hic, unde nam id,
+        voluptates voluptatum deserunt sequi et exercitationem provident quia? Quibusdam, non nobis nesciunt numquam
+        quaerat recusandae.</p>
+    <button>click me</button>
+
+
+
+    <!-- practice set 3 -->
+    <div id="div"></div>
+
+    <nav>
+        <div class="navbar">
+            <ul class="navlink">
+                <div class="logo">amazon/in</div>
+                <li><a href="#">Accout</a></li>
+                <li><a href="#">My Cart</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <input type="text" name="" id="" placeholder="search">
+            <a href="#" id="search">search</a>
+        </div>
+    </nav>
+
+
+</body>
+
+</html>

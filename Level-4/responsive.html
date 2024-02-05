@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+     div{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(204, 122, 15);
+     }
+
+     @media (max-width:300px){               /* from width 0 to till 300px it is visible on screen  */
+        div{
+            background-color: rgb(18, 228, 105);
+        }
+     }
+     @media (min-width:300px)and(max-width:400px){
+        div{
+            background-color: rgb(228, 224, 18);
+        }
+     }
+
+   @media (min-width:700px){                      /* if width is above 700px then only it is visible on screen  */
+        div{
+            background-color:rgb(255, 28, 28);
+        }
+     }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
